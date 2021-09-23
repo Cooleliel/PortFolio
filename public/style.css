@@ -13,7 +13,6 @@ htm{
 /**Style css applique a tout les elements contenu dans la balise body**/
 body{
  width: 100%;/*Occupe toute la largeur de la page*/
- border: 1px solid #fff;
  position: relative;
  background: #1d1d1d;/*applique un arriere-plan de couleur noire*/
  color: #fff;/*Applique une couleur blanche au texte*/
@@ -22,7 +21,6 @@ body{
 
 /*navbar*/
 .navbar{
- border: 1px solid red;
  position: fixed;
  top: 0;
  left: 0;
@@ -88,4 +86,87 @@ body{
 /*image*/
 #pp{
  width: 15%;
+}
+
+/*home section*/
+.home{
+ width: 100%;
+ min-height: calc(100vh - 60px) ;
+ height: auto;
+ margin-top: 60px;
+ padding: 0 10vw;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ position: relative;
+}
+
+/*hero-content*/
+.hero-content{
+ width: 50%;
+}
+
+/*hero-heading*/
+.hero-heading{
+ font-size: 5rem;
+ text-transform: capitalize;
+ font-weight: 5000;
+}
+
+/*highlight*/
+.highlight{
+ color:darkorange;
+}
+
+/*profession*/
+.profession{
+ width: fit-content;
+ display: block;
+ margin: 10px 0 20px ;
+ margin-left: auto;
+ text-transform: capitalize;
+ position: relative;
+ padding: 10px 20px;
+ color: #1d1d1d;
+ z-index: 2;
+}
+
+.profession::before{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: #e3e3ee;
+ z-index: -1;/*ajustre la visibilite du texte*/
+ transform: skewX(10deg);/*donne une forme de parallelogramme */
+}
+
+.profession::after{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: -100px;
+ width: 100%;
+ height: 2px;
+ background:#e3e3ee;
+}
+
+/*info*/
+.info{
+ line-height: 40px;
+ margin-bottom: 50px;
+
+}
+
+/*btn*/
+.btn{
+ padding: 10px 20px;
+ text-decoration: none;
+ border-radius: 50px;
+ background: darkorange;
+ color: #fff;
+ text-transform: capitalize;
+ border: 1px outset #fff;
 }
