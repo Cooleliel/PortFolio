@@ -1,0 +1,86 @@
+/**Style css applique a tout les elements de la page**/
+*{
+ margin: 0;/*retrait des marges exterieures*/
+ padding: 0;/*retrait des marges interieures*/
+ box-sizing: border-box;
+}
+
+/**Style css applique a tout les elements contenu dans la balise html**/
+htm{
+ scroll-behavior: smooth;
+}
+
+/**Style css applique a tout les elements contenu dans la balise body**/
+body{
+ width: 100%;/*Occupe toute la largeur de la page*/
+ border: 1px solid #fff;
+ position: relative;
+ background: #1d1d1d;/*applique un arriere-plan de couleur noire*/
+ color: #fff;/*Applique une couleur blanche au texte*/
+ font-family: 'roboto' , 'sans-serif';/*ajout d'autres types de police au text*/
+}
+
+/*navbar*/
+.navbar{
+ border: 1px solid red;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 60px;/*occupe une hauteur de 60px */
+ background: #1d1d1d;
+ padding: 0 10vw;
+ display: flex;/*Affiche les elements de facon horizontal*/
+ justify-content: space-between;/*Creer des espace entre les elements*/
+ align-items: center;
+ z-index: 9;
+}
+
+/*brand*/
+.brand{
+ text-transform: capitalize;/*Mettre tout les textes en lettres capitales*/
+ font-weight: 500;
+}
+
+/*links-container*/
+.links-container{
+ display: flex;
+ list-style: none;/*retrait des puces */
+}
+
+/*link*/
+.link{
+ text-transform: capitalize;
+ color: #fff;
+ text-decoration: none;/*retrait du surlignement des liens*/
+ margin: 0 10px;
+ padding: 10px;
+ position: relative;
+}
+
+.link:hover:not(.active){
+ opacity: 0.7;/*reduction de l'opacity de l'element non actif au survol de la souris*/
+}
+
+.link.active::before{
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 5px;
+ height: 5px;
+ border-radius: 50%;
+ background: #fff;
+}
+
+.link.active::after{
+ content: '';
+ position: absolute;
+ bottom: 2px;
+ left: 0;
+ width: 100%;
+ height: 1px;
+ background: #fff;
+
+}
