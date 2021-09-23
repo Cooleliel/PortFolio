@@ -116,6 +116,7 @@ body{
 /*highlight*/
 .highlight{
  color:darkorange;
+ text-transform: capitalize;
 }
 
 /*profession*/
@@ -169,4 +170,19 @@ body{
  color: #fff;
  text-transform: capitalize;
  border: 1px outset #fff;
+}
+
+/*About section*/
+.about{
+ width: 100%;
+ height: auto;
+ padding: 50px 10vw;
+}
+
+/*heading*/
+.heading{
+ text-align: center;
+ font-weight: 500;
+ font-size: 3.5rem;
+ text-transform: capitalize;
 }
